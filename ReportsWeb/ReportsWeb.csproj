@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A9992971-3F26-43A5-9400-C4B7D7570D80}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ReportsWeb</RootNamespace>
+    <AssemblyName>ReportsWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Mono.Security, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql, Version=2.1.3.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\Admin.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\LogonDomain.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Account\UserManage.aspx" />
+    <Content Include="Reports\SO\Reports.aspx" />
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Scripts\jquery-1.11.1.min.map" />
+    <None Include="Service References\Service155\service.disco" />
+    <None Include="Service References\Service155\configuration91.svcinfo" />
+    <None Include="Service References\Service155\configuration.svcinfo" />
+    <None Include="Service References\Service155\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\Service99\service.disco" />
+    <None Include="Service References\Service99\configuration91.svcinfo" />
+    <None Include="Service References\Service99\configuration.svcinfo" />
+    <None Include="Service References\Service99\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\Service100\service.disco" />
+    <None Include="Service References\Service100\configuration91.svcinfo" />
+    <None Include="Service References\Service100\configuration.svcinfo" />
+    <None Include="Service References\Service100\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Scripts\html5shiv.min.js" />
+    <Content Include="Scripts\ie8-responsive-file-warning.js" />
+    <Content Include="Scripts\jquery-1.11.1.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\webreport.js" />
+    <None Include="Service References\ServiceReference208\UserLoginCheck.disco" />
+    <None Include="Service References\ServiceReference208\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReference208\configuration.svcinfo" />
+    <None Include="Service References\ServiceReference208\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Styles\bootstrap2\css\bootstrap-ie6.css" />
+    <Content Include="Styles\bootstrap2\css\bootstrap-ie6.min.css" />
+    <Content Include="Styles\bootstrap2\css\bootstrap.css" />
+    <Content Include="Styles\bootstrap2\css\ie.css" />
+    <Content Include="Styles\bootstrap2\img\glyphicons-halflings-8.png" />
+    <Content Include="Styles\bootstrap2\img\glyphicons-halflings-white.png" />
+    <Content Include="Styles\bootstrap2\img\glyphicons-halflings.png" />
+    <Content Include="Styles\bootstrap2\js\bootstrap-affix.js" />
+    <Content Include="Styles\bootstrap2\js\bootstrap-alert.js" />
+    <Content Include="Styles\bootstrap2\js\bootstrap-button.js" />
+    <Content Include="Styles\bootstrap2\js\bootstrap-carousel.js" />
+    <Content Include="Styles\bootstrap2\js\bootstrap-collapse.js" />
+    <Content Include="Styles\bootstrap2\js\bootstrap-dropdown.js" />
+    <Content Include="Styles\bootstrap2\js\bootstrap-ie.js" />
+    <Content Include="Styles\bootstrap2\js\bootstrap-modal.js" />
+    <Content Include="Styles\bootstrap2\js\bootstrap-popover.js" />
+    <Content Include="Styles\bootstrap2\js\bootstrap-scrollspy.js" />
+    <Content Include="Styles\bootstrap2\js\bootstrap-tab.js" />
+    <Content Include="Styles\bootstrap2\js\bootstrap-tooltip.js" />
+    <Content Include="Styles\bootstrap2\js\bootstrap-transition.js" />
+    <Content Include="Styles\bootstrap2\js\bootstrap-typeahead.js" />
+    <Content Include="Styles\bootstrap2\js\bootstrap.js" />
+    <Content Include="Styles\bootstrap2\js\bootstrap.min.js" />
+    <Content Include="Styles\bootstrap2\js\tests\index.html" />
+    <Content Include="Styles\bootstrap2\js\tests\phantom.js" />
+    <Content Include="Styles\bootstrap2\js\tests\server.js" />
+    <Content Include="Styles\bootstrap2\js\tests\unit\bootstrap-affix.js" />
+    <Content Include="Styles\bootstrap2\js\tests\unit\bootstrap-alert.js" />
+    <Content Include="Styles\bootstrap2\js\tests\unit\bootstrap-button.js" />
+    <Content Include="Styles\bootstrap2\js\tests\unit\bootstrap-carousel.js" />
+    <Content Include="Styles\bootstrap2\js\tests\unit\bootstrap-collapse.js" />
+    <Content Include="Styles\bootstrap2\js\tests\unit\bootstrap-dropdown.js" />
+    <Content Include="Styles\bootstrap2\js\tests\unit\bootstrap-modal.js" />
+    <Content Include="Styles\bootstrap2\js\tests\unit\bootstrap-phantom.js" />
+    <Content Include="Styles\bootstrap2\js\tests\unit\bootstrap-popover.js" />
+    <Content Include="Styles\bootstrap2\js\tests\unit\bootstrap-scrollspy.js" />
+    <Content Include="Styles\bootstrap2\js\tests\unit\bootstrap-tab.js" />
+    <Content Include="Styles\bootstrap2\js\tests\unit\bootstrap-tooltip.js" />
+    <Content Include="Styles\bootstrap2\js\tests\unit\bootstrap-transition.js" />
+    <Content Include="Styles\bootstrap2\js\tests\unit\bootstrap-typeahead.js" />
+    <Content Include="Styles\bootstrap2\js\tests\vendor\jquery.js" />
+    <Content Include="Styles\bootstrap2\js\tests\vendor\qunit.css" />
+    <Content Include="Styles\bootstrap2\js\tests\vendor\qunit.js" />
+    <Content Include="Styles\Copy.png" />
+    <Content Include="Styles\favicon.ico" />
+    <Content Include="Styles\images\Logotest.png" />
+    <Content Include="Styles\logo.png" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <None Include="Service References\ServiceReference208\UserLoginCheck.wsdl" />
+    <None Include="Styles\bootstrap2\js\.jshintrc" />
+    <None Include="WebReportDataSet.xsc">
+      <DependentUpon>WebReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="WebReportDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WebReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="WebReportDataSet.xss">
+      <DependentUpon>WebReportDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\LogonDomain.aspx.cs">
+      <DependentUpon>LogonDomain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\LogonDomain.aspx.designer.cs">
+      <DependentUpon>LogonDomain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\UserManage.aspx.cs">
+      <DependentUpon>UserManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\UserManage.aspx.designer.cs">
+      <DependentUpon>UserManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="IdentityScope.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\SO\Reports.aspx.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\SO\Reports.aspx.designer.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Service155\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Service99\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Service100\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReference208\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Sqlhelper.cs" />
+    <Compile Include="WebReportDataSet.Designer.cs">
+      <DependentUpon>WebReportDataSet.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="dal\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\SO\siv_mstr_l.rdlc" />
+    <EmbeddedResource Include="Reports\SO\siv_mstr_p.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SO\siv_mstr_wecfb_p.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SO\360Data_user_hw_softs.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Service155\service.wsdl" />
+    <None Include="Service References\Service99\service.wsdl" />
+    <None Include="Service References\Service100\service.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\Service155\" />
+    <WCFMetadataStorage Include="Service References\Service99\" />
+    <WCFMetadataStorage Include="Service References\Service100\" />
+    <WCFMetadataStorage Include="Service References\ServiceReference208\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2149</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
