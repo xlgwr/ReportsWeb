@@ -1,4 +1,5 @@
-ï»¿<?xml version="1.0" encoding="utf-8"?>
+declare @xmldoc xml
+set @xmldoc = N'<?xml version="1.0" encoding="utf-16"?>
 <Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
   <DataSources>
     <DataSource Name="siv_mstr">
@@ -838,7 +839,7 @@
                             <TextRun>
                               <Value>=rownumber(Nothing)</Value>
                               <Style>
-                                <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                                <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                                 <FontSize>8pt</FontSize>
                               </Style>
                             </TextRun>
@@ -894,7 +895,7 @@
                             <TextRun>
                               <Value>=Fields!sivd_part.Value</Value>
                               <Style>
-                                <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                                <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                                 <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
@@ -930,7 +931,7 @@
                             <TextRun>
                               <Value>=Fields!sivd_po.Value</Value>
                               <Style>
-                                <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                                <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                                 <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
@@ -986,7 +987,7 @@
                             <TextRun>
                               <Value>=Split(Fields!sivd_desc.Value,"@").GetValue(0) &amp; vbcrlf + trim(Split(Fields!sivd_desc.Value,"@").GetValue(1)) + vbcrlf + Fields!sivd_cpart.Value</Value>
                               <Style>
-                                <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                                <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                                 <FontSize>8pt</FontSize>
                               </Style>
                             </TextRun>
@@ -1041,7 +1042,7 @@
                             <TextRun>
                               <Value>=CLng(Fields!sivd_qty.Value)</Value>
                               <Style>
-                                <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                                <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                                 <FontSize>8pt</FontSize>
                                 <Format>#,0</Format>
                               </Style>
@@ -1078,7 +1079,7 @@
                             <TextRun>
                               <Value>=Fields!sivd_price.Value</Value>
                               <Style>
-                                <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                                <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                                 <FontSize>8pt</FontSize>
                                 <Format>#,0.0###</Format>
                               </Style>
@@ -1115,7 +1116,7 @@
                             <TextRun>
                               <Value>=Fields!sivd_line_amt.Value</Value>
                               <Style>
-                                <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                                <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                                 <FontSize>8pt</FontSize>
                                 <Format>####,0.0###</Format>
                               </Style>
@@ -1160,7 +1161,7 @@
                             <TextRun>
                               <Value />
                               <Style>
-                                <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                                <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -1196,7 +1197,7 @@
                             <TextRun>
                               <Value>=code.ToFirstA(First(Fields!siv_inv_memo001.Value, "siv_mstr"),0,":")</Value>
                               <Style>
-                                <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                                <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                                 <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
@@ -1232,7 +1233,7 @@
                             <TextRun>
                               <Value />
                               <Style>
-                                <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                                <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -1265,7 +1266,7 @@
                             <TextRun>
                               <Value />
                               <Style>
-                                <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                                <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -1311,7 +1312,7 @@
                             <TextRun>
                               <Value />
                               <Style>
-                                <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                                <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -1347,7 +1348,7 @@
                             <TextRun>
                               <Value>=code.ToFirstA(First(Fields!siv_inv_memo002.Value, "siv_mstr"),0,"@")</Value>
                               <Style>
-                                <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                                <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                                 <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
@@ -1383,7 +1384,7 @@
                             <TextRun>
                               <Value />
                               <Style>
-                                <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                                <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -1416,7 +1417,7 @@
                             <TextRun>
                               <Value />
                               <Style>
-                                <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                                <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -1459,7 +1460,7 @@
                             <TextRun>
                               <Value />
                               <Style>
-                                <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                                <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -1495,7 +1496,7 @@
                             <TextRun>
                               <Value>=code.ToFirstA(First(Fields!siv_inv_memo003.Value, "siv_mstr"),0,"@")</Value>
                               <Style>
-                                <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                                <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                                 <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
@@ -1531,7 +1532,7 @@
                             <TextRun>
                               <Value>= "TOTAL:" &amp; First(Fields!siv_curr.Value, "siv_mstr")</Value>
                               <Style>
-                                <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                                <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                                 <FontSize>9pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -1568,7 +1569,7 @@
                             <TextRun>
                               <Value>= Sum(Fields!siv_ttl_amt.Value, "siv_mstr")</Value>
                               <Style>
-                                <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                                <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                                 <FontSize>9pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                                 <Format>####,0.00</Format>
@@ -1616,7 +1617,7 @@
                             <TextRun>
                               <Value />
                               <Style>
-                                <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                                <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -1652,7 +1653,7 @@
                             <TextRun>
                               <Value>=code.ToFirstA(cstr(First(Fields!siv_inv_memo004.Value, "siv_mstr")),0,"@")</Value>
                               <Style>
-                                <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                                <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                                 <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
@@ -1688,7 +1689,7 @@
                             <TextRun>
                               <Value />
                               <Style>
-                                <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                                <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                                 <FontSize>9pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -1725,7 +1726,7 @@
                             <TextRun>
                               <Value />
                               <Style>
-                                <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                                <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                                 <FontSize>9pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -1772,7 +1773,7 @@
                             <TextRun>
                               <Value />
                               <Style>
-                                <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                                <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -1808,7 +1809,7 @@
                             <TextRun>
                               <Value>=iif(trim(Parameters!cust_siv_amt_desc.Value) = "xlgwr",First(Fields!siv_amt_desc.Value, "siv_mstr"),Parameters!cust_siv_amt_desc.Value)</Value>
                               <Style>
-                                <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                                <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                                 <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
@@ -2122,7 +2123,7 @@
               <KeepTogether>true</KeepTogether>
             </TablixMember>
             <TablixMember>
-              <Group Name="è¯¦ç»†ä¿¡æ¯1" />
+              <Group Name="ÏêÏ¸ÐÅÏ¢1" />
             </TablixMember>
             <TablixMember>
               <KeepWithGroup>Before</KeepWithGroup>
@@ -2206,7 +2207,7 @@
       <DataType>String</DataType>
       <DefaultValue>
         <Values>
-          <Value>ï¼®othing</Value>
+          <Value>£Îothing</Value>
         </Values>
       </DefaultValue>
       <Prompt>ReportParameter1</Prompt>
@@ -2239,7 +2240,7 @@ End Function
   <Width>8.0622in</Width>
   <Page>
     <PageHeader>
-      <Height>13.03561cm</Height>
+      <Height>13.00915cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -2252,7 +2253,7 @@ End Function
                 <TextRun>
                   <Value>=": " &amp; First(Fields!siv_inv_to.Value, "siv_mstr")</Value>
                   <Style>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontSize>9pt</FontSize>
                   </Style>
                 </TextRun>
@@ -2280,7 +2281,7 @@ End Function
                 <TextRun>
                   <Value>=First(Fields!sysdescen.Value, "rsystem") &amp; vbcrlf &amp; First(Fields!sysdesczh.Value, "rsystem")</Value>
                   <Style>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontSize>11pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
@@ -2314,7 +2315,7 @@ End Function
                 <TextRun>
                   <Value>=First(Fields!sysaddr2.Value, "rsystem") &amp; vbcrlf &amp; First(Fields!systel.Value, "rsystem")</Value>
                   <Style>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontSize>7pt</FontSize>
                   </Style>
                 </TextRun>
@@ -2347,7 +2348,7 @@ End Function
                 <TextRun>
                   <Value>=": " &amp; First(Fields!siv_nbr.Value, "siv_mstr")</Value>
                   <Style>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontSize>12pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
@@ -2384,7 +2385,7 @@ End Function
                 <TextRun>
                   <Value>INVOICE NO</Value>
                   <Style>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontSize>14pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
@@ -2420,7 +2421,7 @@ End Function
                 <TextRun>
                   <Value>=": " &amp; First(Fields!siv_bill_name.Value, "siv_mstr") &amp; vbcrlf &amp;  "  " &amp; First(Fields!siv_bill001.Value, "siv_mstr") &amp; vbcrlf &amp; "  " &amp; First(Fields!siv_bill002.Value, "siv_mstr") &amp; vbcrlf &amp;  "  " &amp; First(Fields!siv_bill003.Value, "siv_mstr") &amp; vbcrlf &amp; "  " &amp; First(Fields!siv_bill004.Value, "siv_mstr") &amp; "  " &amp; First(Fields!siv_bill005.Value, "siv_mstr")</Value>
                   <Style>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontSize>9pt</FontSize>
                   </Style>
                 </TextRun>
@@ -2451,7 +2452,7 @@ End Function
                 <TextRun>
                   <Value>MESSRS</Value>
                   <Style>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -2485,7 +2486,7 @@ End Function
                 <TextRun>
                   <Value>CONSIGNED TO</Value>
                   <Style>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -2519,7 +2520,7 @@ End Function
                 <TextRun>
                   <Value>=": " &amp; iif(First(Fields!siv_inv_fr.Value, "siv_mstr").ToString() = ""," ",First(Fields!siv_inv_fr.Value, "siv_mstr"))</Value>
                   <Style>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontSize>9pt</FontSize>
                   </Style>
                 </TextRun>
@@ -2549,7 +2550,7 @@ End Function
                 <TextRun>
                   <Value>TO</Value>
                   <Style>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -2582,7 +2583,7 @@ End Function
                 <TextRun>
                   <Value>=": " &amp; First(Fields!siv_inv_date.Value, "siv_mstr")</Value>
                   <Style>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontSize>9pt</FontSize>
                     <Format>MM/dd/yy</Format>
                   </Style>
@@ -2619,7 +2620,7 @@ End Function
                 <TextRun>
                   <Value>DATE</Value>
                   <Style>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontSize>9pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
@@ -2656,7 +2657,7 @@ End Function
                 <TextRun>
                   <Value>=": " &amp; First(Fields!siv_scursob.Value, "siv_mstr")</Value>
                   <Style>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontSize>9pt</FontSize>
                   </Style>
                 </TextRun>
@@ -2692,7 +2693,7 @@ End Function
                 <TextRun>
                   <Value>OSO NO</Value>
                   <Style>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontSize>9pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
@@ -2729,7 +2730,7 @@ End Function
                 <TextRun>
                   <Value>=": " &amp; First(Fields!siv_ship_terms.Value, "siv_mstr")</Value>
                   <Style>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontSize>9pt</FontSize>
                   </Style>
                 </TextRun>
@@ -2765,7 +2766,7 @@ End Function
                 <TextRun>
                   <Value>SHIP TERM</Value>
                   <Style>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontSize>9pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
@@ -2802,7 +2803,7 @@ End Function
                 <TextRun>
                   <Value>=": " &amp; First(Fields!siv_cr_terms.Value, "siv_mstr")</Value>
                   <Style>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontSize>8pt</FontSize>
                   </Style>
                 </TextRun>
@@ -2838,7 +2839,7 @@ End Function
                 <TextRun>
                   <Value>TERMS OF PAYMENT</Value>
                   <Style>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontSize>9pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
@@ -2875,7 +2876,7 @@ End Function
                 <TextRun>
                   <Value>=": " &amp; First(Fields!siv_ship_mode.Value, "siv_mstr")</Value>
                   <Style>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontSize>8pt</FontSize>
                   </Style>
                 </TextRun>
@@ -2909,7 +2910,7 @@ End Function
                 <TextRun>
                   <Value>SHIP MODE</Value>
                   <Style>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontSize>9pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
@@ -2943,7 +2944,7 @@ End Function
                 <TextRun>
                   <Value>=": " &amp; First(Fields!siv_ship_name.Value, "siv_mstr") &amp;  vbcrlf  &amp; "  " &amp; First(Fields!siv_ship001.Value, "siv_mstr") &amp;  vbcrlf &amp; "  " &amp; First(Fields!siv_ship002.Value, "siv_mstr") &amp;  vbcrlf &amp;  "  " &amp; First(Fields!siv_ship003.Value, "siv_mstr") &amp; "   " &amp; First(Fields!siv_ship004.Value, "siv_mstr")</Value>
                   <Style>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontSize>9pt</FontSize>
                   </Style>
                 </TextRun>
@@ -2974,7 +2975,7 @@ End Function
                 <TextRun>
                   <Value>=First(Fields!siv_id.Value, "siv_mstr")</Value>
                   <Style>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontSize>12pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
@@ -3010,7 +3011,7 @@ End Function
                 <TextRun>
                   <Value>FROM</Value>
                   <Style>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -3061,7 +3062,7 @@ End Function
                 <TextRun>
                   <Value>=": " &amp; First(Fields!siv_bill007.Value, "siv_mstr")</Value>
                   <Style>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontSize>9pt</FontSize>
                   </Style>
                 </TextRun>
@@ -3094,7 +3095,7 @@ End Function
                 <TextRun>
                   <Value>Bill-To</Value>
                   <Style>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -3129,7 +3130,7 @@ End Function
                 <TextRun>
                   <Value>=": " &amp; First(Fields!siv_bill008.Value, "siv_mstr")</Value>
                   <Style>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontSize>9pt</FontSize>
                   </Style>
                 </TextRun>
@@ -3162,7 +3163,7 @@ End Function
                 <TextRun>
                   <Value>Bank Name</Value>
                   <Style>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -3197,7 +3198,7 @@ End Function
                 <TextRun>
                   <Value>=": " &amp; First(Fields!siv_bill009.Value, "siv_mstr")</Value>
                   <Style>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontSize>9pt</FontSize>
                   </Style>
                 </TextRun>
@@ -3231,7 +3232,7 @@ End Function
                   <Value>Branch</Value>
                   <Style>
                     <FontStyle>Normal</FontStyle>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontWeight>Bold</FontWeight>
                     <TextDecoration>None</TextDecoration>
                     <Color>#000000</Color>
@@ -3269,7 +3270,7 @@ End Function
                   <Value>Account Number</Value>
                   <Style>
                     <FontStyle>Normal</FontStyle>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontWeight>Bold</FontWeight>
                     <TextDecoration>None</TextDecoration>
                     <Color>#000000</Color>
@@ -3307,7 +3308,7 @@ End Function
                   <Value>Swift Code</Value>
                   <Style>
                     <FontStyle>Normal</FontStyle>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontWeight>Bold</FontWeight>
                     <TextDecoration>None</TextDecoration>
                     <Color>#000000</Color>
@@ -3344,7 +3345,7 @@ End Function
                 <TextRun>
                   <Value>=": " &amp; First(Fields!siv_ship009.Value, "siv_mstr")</Value>
                   <Style>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontSize>9pt</FontSize>
                   </Style>
                 </TextRun>
@@ -3377,7 +3378,7 @@ End Function
                 <TextRun>
                   <Value>=": " &amp; First(Fields!siv_ship010.Value, "siv_mstr")</Value>
                   <Style>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontSize>9pt</FontSize>
                   </Style>
                 </TextRun>
@@ -3411,7 +3412,7 @@ End Function
                   <Value>Address Line1</Value>
                   <Style>
                     <FontStyle>Normal</FontStyle>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontWeight>Bold</FontWeight>
                     <TextDecoration>None</TextDecoration>
                     <Color>#000000</Color>
@@ -3449,7 +3450,7 @@ End Function
                   <Value>Address Line2</Value>
                   <Style>
                     <FontStyle>Normal</FontStyle>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontWeight>Bold</FontWeight>
                     <TextDecoration>None</TextDecoration>
                     <Color>#000000</Color>
@@ -3490,7 +3491,7 @@ End Function
                 <TextRun>
                   <Value>=": " &amp; First(Fields!siv_ship007.Value, "siv_mstr")</Value>
                   <Style>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontSize>9pt</FontSize>
                   </Style>
                 </TextRun>
@@ -3523,7 +3524,7 @@ End Function
                 <TextRun>
                   <Value>=": " &amp; First(Fields!siv_ship008.Value, "siv_mstr")</Value>
                   <Style>
-                    <FontFamily>å¾®è½¯é›…é»‘</FontFamily>
+                    <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
                     <FontSize>9pt</FontSize>
                   </Style>
                 </TextRun>
@@ -3854,4 +3855,10 @@ pw0G+ObRKUPxUYLQwJLRsUW4Bji9u3taUzkZFcSLChAU4XoEnLnRwb3VVdn6+plo4XR4cJdBmyjM78lM
   </EmbeddedImages>
   <rd:ReportID>d6c01e99-a099-47e6-a5f2-90eb9c9cb087</rd:ReportID>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-</Report>
+</Report>'
+insert into dbo.rtemplate(Id,tdoctype,tdesc,[version],tempxml)
+--values('2','INVOICE','landscape',2,@xmldoc)
+values('1','INVOICE','portait',1,@xmldoc)
+--delete from rtemplate where version = 1
+-- select max(id) from rtemplate
+-- select * from rtemplate
