@@ -125,28 +125,16 @@ set @xmldoc = N'<?xml version="1.0" encoding="utf-16"?>
           <DataField>s_name</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="s_time">
-          <DataField>s_time</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ip">
-          <DataField>ip</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="name">
-          <DataField>name</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="domain">
-          <DataField>domain</DataField>
+        <Field Name="mid">
+          <DataField>mid</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="osver">
           <DataField>osver</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="mid">
-          <DataField>mid</DataField>
+        <Field Name="s_time">
+          <DataField>s_time</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
@@ -156,7 +144,7 @@ set @xmldoc = N'<?xml version="1.0" encoding="utf-16"?>
       </Query>
       <rd:DataSetInfo>
         <rd:DataSetName>WebReportDataSet</rd:DataSetName>
-        <rd:SchemaPath>D:\0ling.xie\0reports\ReportsWeb\ReportsWeb\WebReportDataSet.xsd</rd:SchemaPath>
+        <rd:SchemaPath>G:\0work\ReportsWeb\trunk\ReportsWeb\WebReportDataSet.xsd</rd:SchemaPath>
         <rd:TableName>user_softs</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />
@@ -173,13 +161,16 @@ set @xmldoc = N'<?xml version="1.0" encoding="utf-16"?>
               <Width>0.22797in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.28757in</Width>
+              <Width>0.79262in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.77053in</Width>
+              <Width>4.01011in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.50819in</Width>
+              <Width>1.86473in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>0.89884in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -352,6 +343,52 @@ set @xmldoc = N'<?xml version="1.0" encoding="utf-16"?>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox3</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <TopBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>1.25pt</Width>
+                        </TopBorder>
+                        <RightBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>0.5pt</Width>
+                        </RightBorder>
+                        <VerticalAlign>Bottom</VerticalAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox4">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>£É£Ð</Value>
+                              <Style>
+                                <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
+                                <FontSize>9pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox4</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>None</Style>
@@ -583,12 +620,68 @@ set @xmldoc = N'<?xml version="1.0" encoding="utf-16"?>
                     </Textbox>
                   </CellContents>
                 </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="ip1">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!ip.Value</Value>
+                              <Style>
+                                <FontFamily>Î¢ÈíÑÅºÚ</FontFamily>
+                                <FontSize>8pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>ip1</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                          <Width>0.5pt</Width>
+                        </Border>
+                        <TopBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>0.5pt</Width>
+                        </TopBorder>
+                        <BottomBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>0.5pt</Width>
+                        </BottomBorder>
+                        <LeftBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>0.5pt</Width>
+                        </LeftBorder>
+                        <RightBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>0.5pt</Width>
+                        </RightBorder>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
               </TablixCells>
             </TablixRow>
           </TablixRows>
         </TablixBody>
         <TablixColumnHierarchy>
           <TablixMembers>
+            <TablixMember />
             <TablixMember />
             <TablixMember />
             <TablixMember />
@@ -610,8 +703,8 @@ set @xmldoc = N'<?xml version="1.0" encoding="utf-16"?>
         <DataSetName>user_hw</DataSetName>
         <Top>0.54709cm</Top>
         <Left>0.25017cm</Left>
-        <Height>0.98cm</Height>
-        <Width>19.79742cm</Width>
+        <Height>0.98001cm</Height>
+        <Width>19.79743cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -830,7 +923,7 @@ set @xmldoc = N'<?xml version="1.0" encoding="utf-16"?>
         <DataSetName>user_softs</DataSetName>
         <Top>2.07417cm</Top>
         <Left>0.25017cm</Left>
-        <Height>0.95cm</Height>
+        <Height>0.95001cm</Height>
         <Width>19.79549cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
@@ -1046,7 +1139,7 @@ set @xmldoc = N'<?xml version="1.0" encoding="utf-16"?>
         Return temp
 End Function
 </Code>
-  <Width>7.97817in</Width>
+  <Width>8.06955in</Width>
   <Page>
     <PageHeader>
       <Height>3.26382cm</Height>
@@ -1413,7 +1506,7 @@ End Function
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>=First(Fields!s_time.Value, "user_softs")</Value>
+                  <Value>=First(Fields!s_time.Value, "user_hw")</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -2098,7 +2191,8 @@ swh7icr0CuCbF1a24bV5LgLfvOrgFdhLSKZ3B9/277STG4IvAo+ev34hjZV7d/YSj+l9wfdQL9/JH6sU
 insert into dbo.rtemplate(Id,tdoctype,tdesc,[version],tempxml)
 --values('5','360Data','user_softs_other',5,@xmldoc)
 --values('4','360Data','user_hw_softs',4,@xmldoc)
-values('6','MISPC','wwts-pc-controll',6,@xmldoc)
---delete from rtemplate where version = 6
+--values('6','MISPC','wwts-pc-controll',6,@xmldoc)
+values('7','MISPC','wtsz-pc-controll',7,@xmldoc)
+--delete from rtemplate where version = 7
 -- select max(id) from rtemplate
--- select * from rtemplate
+-- select *,Upper(tdesc) from rtemplate

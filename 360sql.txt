@@ -1,0 +1,40 @@
+select * from t_client_ip where s_ip like '192%' limit 10;
+select * from t_user WHERE name='HP-8CG4330XWB';
+select * from t_user where ip='192.168.18.191';
+
+select * from t_user where mid='b30566b8c265a4c58936774a8676c388';
+select * from t_client_ip where s_mid='b30566b8c265a4c58936774a8676c388';
+select * from t_hw where s_name='b30566b8c265a4c58936774a8676c388';
+select * from t_soft where s_mid='b30566b8c265a4c58936774a8676c388';
+select * from  get_hws where ip='192.168.18.191' order by s_type;
+select * from  get_hws where ip = '192.168.18.191' order by s_type
+select * from  get_hws where name = 'HP-8CG4330XWB' order by ip,s_type
+
+select * from  get_hws where mid='b30566b8c265a4c58936774a8676c388' limit 1000;
+
+select * from get_softs where mid='b30566b8c265a4c58936774a8676c388' limit 1000;
+
+select distinct mid,s_name,osver from get_softs WHERE ip = '192.168.18.191' order by s_name
+
+select distinct mid,s_name,osver from get_softs where name = 'HP-8CG4330XWB' order by s_name 
+
+CREATE OR REPLACE VIEW get_hws AS 
+ SELECT t_user.mid, t_hw.s_type, t_hw.s_desc, t_hw.s_id, 
+    to_timestamp(t_hw.s_time::double precision) AS s_time, 
+    t_client_ip.s_ip AS ip, upper(t_user.name) AS name, t_user.domain, t_client_ip.s_mac
+   FROM t_user, t_hw, t_client_ip
+  WHERE t_user.mid = t_hw.s_name AND t_user.mid = t_client_ip.s_mid;
+
+ALTER TABLE get_hws
+  OWNER TO mis;
+
+CREATE OR REPLACE VIEW get_softs AS 
+ SELECT t_user.mid, t_soft.s_name, 
+    to_timestamp(t_soft.s_time::double precision) AS s_time, 
+    t_client_ip.s_ip AS ip, upper(t_user.name) AS name, t_user.domain, t_user.osver
+   FROM t_user, t_soft, t_client_ip
+  WHERE t_user.mid = t_soft.s_mid AND t_client_ip.s_mid = t_soft.s_mid;
+
+ALTER TABLE get_softs
+  OWNER TO mis; 
+ 

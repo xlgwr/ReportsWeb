@@ -218,7 +218,7 @@ namespace ReportsWeb
             connpg.Open();         
             try
             {
-                string strsql = @"SELECT t_user.mid,t_hw.s_type, t_hw.s_desc, t_hw.s_id, to_timestamp(t_hw.s_time) as s_time ,  t_user.ip,  t_user.name, t_user.domain,  t_client_ip.s_mac FROM  public.t_user,   public.t_hw, public.t_client_ip WHERE  t_user.mid = t_hw.s_name and t_user.ip = t_client_ip.s_ip and t_user.mid = t_client_ip.s_mid  and t_user.ip = '" + strIp + "'order by s_name";
+                string strsql = @"select * from  get_hws where ip = '" + strIp + "' order by s_type";
                 NpgsqlDataAdapter da = new NpgsqlDataAdapter(strsql, connpg);
                 da.Fill(myds);
                 return myds;
@@ -247,7 +247,7 @@ namespace ReportsWeb
             connpg.Open();
             try
             {
-                string strsql = @"SELECT t_user.mid,t_hw.s_type, t_hw.s_desc, t_hw.s_id, to_timestamp(t_hw.s_time) as s_time ,  t_user.ip,  t_user.name, t_user.domain,  t_client_ip.s_mac FROM  public.t_user,   public.t_hw, public.t_client_ip WHERE  t_user.mid = t_hw.s_name and t_user.ip = t_client_ip.s_ip and t_user.mid = t_client_ip.s_mid  and t_user.name = '" + strName + "'order by s_name";
+                string strsql = @"select * from  get_hws where name = '" + strName.ToUpper() + "' order by ip,s_type";
                 NpgsqlDataAdapter da = new NpgsqlDataAdapter(strsql, connpg);
                 da.Fill(myds);
                 return myds;
@@ -270,7 +270,7 @@ namespace ReportsWeb
             connpg.Open();
             try
             {
-                string strsql = @"SELECT   t_user.mid,t_soft.s_name,   to_timestamp(t_soft.s_time) as  s_time ,  t_user.ip,   t_user.name,   t_user.domain,  t_user.osver FROM   public.t_user,   public.t_soft WHERE   t_soft.s_mid = t_user.mid  and  t_user.ip = '" + strIp + "' order by s_name ";
+                string strsql = @"select distinct mid,s_name,osver,s_time  from get_softs WHERE ip = '" + strIp + "' order by s_name ";
                 NpgsqlDataAdapter da = new NpgsqlDataAdapter(strsql, connpg);
                 da.Fill(myds);
                 return myds;
@@ -293,7 +293,7 @@ namespace ReportsWeb
             connpg.Open();
             try
             {
-                string strsql = @"SELECT   t_user.mid,t_soft.s_name,   to_timestamp(t_soft.s_time) as  s_time ,  t_user.ip,   t_user.name,   t_user.domain,  t_user.osver FROM   public.t_user,   public.t_soft WHERE   t_soft.s_mid = t_user.mid  and  t_user.name = '" + strName + "' order by s_name ";
+                string strsql = @"select distinct mid,s_name,osver,s_time  from get_softs WHERE name = '" + strName.ToUpper() + "' order by s_name ";
                 NpgsqlDataAdapter da = new NpgsqlDataAdapter(strsql, connpg);
                 da.Fill(myds);
                 return myds;

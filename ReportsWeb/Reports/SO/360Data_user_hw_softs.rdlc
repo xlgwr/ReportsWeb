@@ -124,28 +124,16 @@
           <DataField>s_name</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="s_time">
-          <DataField>s_time</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ip">
-          <DataField>ip</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="name">
-          <DataField>name</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="domain">
-          <DataField>domain</DataField>
+        <Field Name="mid">
+          <DataField>mid</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="osver">
           <DataField>osver</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="mid">
-          <DataField>mid</DataField>
+        <Field Name="s_time">
+          <DataField>s_time</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
@@ -155,7 +143,7 @@
       </Query>
       <rd:DataSetInfo>
         <rd:DataSetName>WebReportDataSet</rd:DataSetName>
-        <rd:SchemaPath>D:\0ling.xie\0reports\ReportsWeb\ReportsWeb\WebReportDataSet.xsd</rd:SchemaPath>
+        <rd:SchemaPath>G:\0work\ReportsWeb\trunk\ReportsWeb\WebReportDataSet.xsd</rd:SchemaPath>
         <rd:TableName>user_softs</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />
@@ -172,13 +160,16 @@
               <Width>0.22797in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.28757in</Width>
+              <Width>0.63845in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.77053in</Width>
+              <Width>4.16428in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.50819in</Width>
+              <Width>1.86473in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>0.91134in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -351,6 +342,52 @@
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox3</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <TopBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>1.25pt</Width>
+                        </TopBorder>
+                        <RightBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>0.5pt</Width>
+                        </RightBorder>
+                        <VerticalAlign>Bottom</VerticalAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox4">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>ＩＰ</Value>
+                              <Style>
+                                <FontFamily>微软雅黑</FontFamily>
+                                <FontSize>9pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox4</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>None</Style>
@@ -582,12 +619,68 @@
                     </Textbox>
                   </CellContents>
                 </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="ip1">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!ip.Value</Value>
+                              <Style>
+                                <FontFamily>微软雅黑</FontFamily>
+                                <FontSize>8pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>ip1</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                          <Width>0.5pt</Width>
+                        </Border>
+                        <TopBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>0.5pt</Width>
+                        </TopBorder>
+                        <BottomBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>0.5pt</Width>
+                        </BottomBorder>
+                        <LeftBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>0.5pt</Width>
+                        </LeftBorder>
+                        <RightBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>0.5pt</Width>
+                        </RightBorder>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
               </TablixCells>
             </TablixRow>
           </TablixRows>
         </TablixBody>
         <TablixColumnHierarchy>
           <TablixMembers>
+            <TablixMember />
             <TablixMember />
             <TablixMember />
             <TablixMember />
@@ -609,8 +702,8 @@
         <DataSetName>user_hw</DataSetName>
         <Top>0.54709cm</Top>
         <Left>0.25017cm</Left>
-        <Height>0.98cm</Height>
-        <Width>19.79742cm</Width>
+        <Height>0.98001cm</Height>
+        <Width>19.82918cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -621,10 +714,10 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>0.37929in</Width>
+              <Width>0.38592in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>7.41421in</Width>
+              <Width>7.42084in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -829,8 +922,8 @@
         <DataSetName>user_softs</DataSetName>
         <Top>2.07417cm</Top>
         <Left>0.25017cm</Left>
-        <Height>0.95cm</Height>
-        <Width>19.79549cm</Width>
+        <Height>0.95001cm</Height>
+        <Width>19.82918cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -860,7 +953,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox34</rd:DefaultName>
         <Top>1.52709cm</Top>
-        <Left>0.26327cm</Left>
+        <Left>0.25017cm</Left>
         <Height>0.54709cm</Height>
         <Width>2.71148cm</Width>
         <ZIndex>2</ZIndex>
@@ -893,7 +986,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox34</rd:DefaultName>
-        <Left>0.26327cm</Left>
+        <Left>0.25017cm</Left>
         <Height>0.54709cm</Height>
         <Width>2.71148cm</Width>
         <ZIndex>3</ZIndex>
@@ -955,7 +1048,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>mid</rd:DefaultName>
-        <Left>8.55173cm</Left>
+        <Left>8.58542cm</Left>
         <Height>0.54709cm</Height>
         <Width>11.49393cm</Width>
         <ZIndex>5</ZIndex>
@@ -1045,7 +1138,7 @@
         Return temp
 End Function
 </Code>
-  <Width>7.97817in</Width>
+  <Width>7.98622in</Width>
   <Page>
     <PageHeader>
       <Height>3.26382cm</Height>
@@ -1125,7 +1218,7 @@ End Function
           <Top>0.75875cm</Top>
           <Left>15.48008cm</Left>
           <Height>0.6cm</Height>
-          <Width>4.56752cm</Width>
+          <Width>4.59927cm</Width>
           <ZIndex>2</ZIndex>
           <Style>
             <Border>
@@ -1159,7 +1252,7 @@ End Function
           <Top>0.15875cm</Top>
           <Left>15.48008cm</Left>
           <Height>0.6cm</Height>
-          <Width>4.56752cm</Width>
+          <Width>4.59927cm</Width>
           <ZIndex>3</ZIndex>
           <Style>
             <Border>
@@ -1327,7 +1420,7 @@ End Function
           <Top>1.35875cm</Top>
           <Left>15.48008cm</Left>
           <Height>0.6cm</Height>
-          <Width>4.56752cm</Width>
+          <Width>4.59927cm</Width>
           <ZIndex>8</ZIndex>
           <Style>
             <Border>
@@ -1359,7 +1452,7 @@ End Function
           <Top>1.95875cm</Top>
           <Left>15.48008cm</Left>
           <Height>0.6cm</Height>
-          <Width>4.56752cm</Width>
+          <Width>4.59927cm</Width>
           <ZIndex>9</ZIndex>
           <Style>
             <Border>
@@ -1412,7 +1505,7 @@ End Function
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>=First(Fields!s_time.Value, "user_softs")</Value>
+                  <Value>=First(Fields!s_time.Value, "user_hw")</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -1423,9 +1516,9 @@ End Function
           </Paragraphs>
           <rd:DefaultName>s_time</rd:DefaultName>
           <Top>2.55875cm</Top>
-          <Left>15.47815cm</Left>
+          <Left>15.48008cm</Left>
           <Height>0.6cm</Height>
-          <Width>4.56752cm</Width>
+          <Width>4.59927cm</Width>
           <ZIndex>11</ZIndex>
           <Style>
             <Border>
