@@ -161,16 +161,16 @@ set @xmldoc = N'<?xml version="1.0" encoding="utf-16"?>
               <Width>0.22797in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.79262in</Width>
+              <Width>0.63845in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.01011in</Width>
+              <Width>4.16428in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1.86473in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.89884in</Width>
+              <Width>0.91134in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -704,7 +704,7 @@ set @xmldoc = N'<?xml version="1.0" encoding="utf-16"?>
         <Top>0.54709cm</Top>
         <Left>0.25017cm</Left>
         <Height>0.98001cm</Height>
-        <Width>19.79743cm</Width>
+        <Width>19.82918cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -715,10 +715,10 @@ set @xmldoc = N'<?xml version="1.0" encoding="utf-16"?>
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>0.37929in</Width>
+              <Width>0.38592in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>7.41421in</Width>
+              <Width>7.42084in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -924,7 +924,7 @@ set @xmldoc = N'<?xml version="1.0" encoding="utf-16"?>
         <Top>2.07417cm</Top>
         <Left>0.25017cm</Left>
         <Height>0.95001cm</Height>
-        <Width>19.79549cm</Width>
+        <Width>19.82918cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -954,7 +954,7 @@ set @xmldoc = N'<?xml version="1.0" encoding="utf-16"?>
         </Paragraphs>
         <rd:DefaultName>Textbox34</rd:DefaultName>
         <Top>1.52709cm</Top>
-        <Left>0.26327cm</Left>
+        <Left>0.25017cm</Left>
         <Height>0.54709cm</Height>
         <Width>2.71148cm</Width>
         <ZIndex>2</ZIndex>
@@ -987,7 +987,7 @@ set @xmldoc = N'<?xml version="1.0" encoding="utf-16"?>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox34</rd:DefaultName>
-        <Left>0.26327cm</Left>
+        <Left>0.25017cm</Left>
         <Height>0.54709cm</Height>
         <Width>2.71148cm</Width>
         <ZIndex>3</ZIndex>
@@ -1049,7 +1049,7 @@ set @xmldoc = N'<?xml version="1.0" encoding="utf-16"?>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>mid</rd:DefaultName>
-        <Left>8.55173cm</Left>
+        <Left>8.58542cm</Left>
         <Height>0.54709cm</Height>
         <Width>11.49393cm</Width>
         <ZIndex>5</ZIndex>
@@ -1139,7 +1139,7 @@ set @xmldoc = N'<?xml version="1.0" encoding="utf-16"?>
         Return temp
 End Function
 </Code>
-  <Width>8.06955in</Width>
+  <Width>7.98622in</Width>
   <Page>
     <PageHeader>
       <Height>3.26382cm</Height>
@@ -1219,7 +1219,7 @@ End Function
           <Top>0.75875cm</Top>
           <Left>15.48008cm</Left>
           <Height>0.6cm</Height>
-          <Width>4.56752cm</Width>
+          <Width>4.59927cm</Width>
           <ZIndex>2</ZIndex>
           <Style>
             <Border>
@@ -1253,7 +1253,7 @@ End Function
           <Top>0.15875cm</Top>
           <Left>15.48008cm</Left>
           <Height>0.6cm</Height>
-          <Width>4.56752cm</Width>
+          <Width>4.59927cm</Width>
           <ZIndex>3</ZIndex>
           <Style>
             <Border>
@@ -1421,7 +1421,7 @@ End Function
           <Top>1.35875cm</Top>
           <Left>15.48008cm</Left>
           <Height>0.6cm</Height>
-          <Width>4.56752cm</Width>
+          <Width>4.59927cm</Width>
           <ZIndex>8</ZIndex>
           <Style>
             <Border>
@@ -1453,7 +1453,7 @@ End Function
           <Top>1.95875cm</Top>
           <Left>15.48008cm</Left>
           <Height>0.6cm</Height>
-          <Width>4.56752cm</Width>
+          <Width>4.59927cm</Width>
           <ZIndex>9</ZIndex>
           <Style>
             <Border>
@@ -1517,9 +1517,9 @@ End Function
           </Paragraphs>
           <rd:DefaultName>s_time</rd:DefaultName>
           <Top>2.55875cm</Top>
-          <Left>15.47815cm</Left>
+          <Left>15.48008cm</Left>
           <Height>0.6cm</Height>
-          <Width>4.56752cm</Width>
+          <Width>4.59927cm</Width>
           <ZIndex>11</ZIndex>
           <Style>
             <Border>
@@ -2191,8 +2191,8 @@ swh7icr0CuCbF1a24bV5LgLfvOrgFdhLSKZ3B9/277STG4IvAo+ev34hjZV7d/YSj+l9wfdQL9/JH6sU
 insert into dbo.rtemplate(Id,tdoctype,tdesc,[version],tempxml)
 --values('5','360Data','user_softs_other',5,@xmldoc)
 --values('4','360Data','user_hw_softs',4,@xmldoc)
---values('6','MISPC','wwts-pc-controll',6,@xmldoc)
-values('7','MISPC','wtsz-pc-controll',7,@xmldoc)
---delete from rtemplate where version = 7
+values('6','MISPC','wwts-pc-controll',6,@xmldoc)
+--values('7','MISPC','wtsz-pc-controll',7,@xmldoc)
+--delete from rtemplate where version = 6
 -- select max(id) from rtemplate
 -- select *,Upper(tdesc) from rtemplate

@@ -1202,7 +1202,7 @@
                               <Value>=iif(trim(Parameters!cust_siv_amt_desc.Value) = "xlgwr",First(Fields!siv_amt_desc.Value, "siv_mstr"),Parameters!cust_siv_amt_desc.Value)</Value>
                               <Style>
                                 <FontFamily>微软雅黑</FontFamily>
-                                <FontSize>9pt</FontSize>
+                                <FontSize>8pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
